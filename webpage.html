@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML & CSS Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light cyan background */
+        }
+
+        header {
+            background-color: #004d40; /* Dark green */
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 15px;
+
+        }
+
+        nav {
+            margin: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: #004d40; /* Dark green */
+            text-decoration: none;
+            padding: 10px;
+            background-color: #a7ffeb; /* Light green */
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #004d40;
+            color: #ffffff;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        article {
+            background-color: #ffffff; /* White background */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-basis: 30%;
+            min-width: 200px;
+        }
+
+        h2 {
+            color: #00796b; /* Teal heading */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #00796b; /* Teal border */
+        }
+
+        th {
+            background-color: #004d40; /* Dark green */
+            color: #ffffff; /* White text */
+        }
+
+        td {
+            background-color: #e0f2f1; /* Pale green background */
+            color: #004d40; /* Dark green text */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .image-gallery {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery img {
+            margin: 10px;
+            width: 200px;
+            height: 150px;
+        }
+
+        form {
+            background-color: #ffffff; /* White form background */
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #00796b; /* Teal border */
+            border-radius: 5px;
+            background-color: #e0f2f1; /* Light green background */
+            color: #004d40; /* Dark green text */
+        }
+
+        input[type="submit"] {
+            padding: 10px 15px;
+            background-color: #00796b; /* Teal submit button */
+            color: #ffffff; /* White text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004d40; /* Dark green on hover */
+        }
+
+        footer {
+            background-color: #004d40; /* Dark green */
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the HTML & CSS Showcase Page</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section>
+        <!-- Article 1 -->
+        <article>
+            <h2>About Us</h2>
+            <p>We are a fictional company showcasing<u> HTML and CSS design possibilities.</u> Explore different sections and see how these simple languages can create dynamic and appealing web pages.</p>
+        </article>
+
+        <!-- Article 2 -->
+        <article>
+            <h2>Services</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Design</td>
+                        <td>$500</td>
+                        <td>Responsive and attractive designs</td>
+                    </tr>
+                    <tr>
+                        <td>SEO</td>
+                        <td>$300</td>
+                        <td>Optimize your site for search engines</td>
+                    </tr>
+                    <tr>
+                        <td>Hosting</td>
+                        <td>$100/year</td>
+                        <td>Reliable and affordable hosting</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <!-- Article 3 -->
+        <article>
+            <h2>Contact Us</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
+
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+        <img src="C:\Users\Anish\OneDrive\Desktop\MERN stack\img1.jpg"alt="Sample Image 1">
+        <img src="C:\Users\Anish\OneDrive\Desktop\MERN stack\img2.jpg"alt="Sample Image 2">
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 HTML & CSS Showcase. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
